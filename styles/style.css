@@ -1,6 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
 */
 
 *,
@@ -134,4 +135,68 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+/*
+================================================================================
+End CSS Reset
+================================================================================
+*/
+
+body {
+    background-color: #1f38a8;
+}
+
+header {
+    color: white;
+}
+
+header h1 {
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-top: 4px solid #f09600;
+    width: fit-content;
+    padding-top: 20px;
+    float: left;
+}
+
+header h2 {
+    font-size: 24px;
+    text-align: right;
+    padding: 40px 0 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #111f5a;
+}
+
+nav a.active {
+    background-color: #f09600;
+    color: #111f5a;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+header,
+nav,
+article,
+footer {
+    padding: 0 15% 0 15%;
+}
+
+article {
+    background-color: white;
 }
